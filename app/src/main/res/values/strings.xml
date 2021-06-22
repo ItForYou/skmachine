@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">머신딜</string>
+    <string name="index">http://itforone.com/~skmachine/index.php</string>
+    <string name="domain">http://itforone.com/~skmachine/</string>
+</resources>
