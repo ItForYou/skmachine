@@ -146,11 +146,9 @@ class ChoromeManager extends WebChromeClient {
         Intent captureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, mainActivity.mCapturedImageURI);
 
-
-        //List<String> validMimeTypes = extractValidMimeTypes(fileChooserParams.getAcceptTypes());
         String acceptTypes[] = fileChooserParams.getAcceptTypes();
         String acceptType = "";
-        for (int i = 0; i < acceptTypes.length; ++ i) {
+        for (int i = 0; i < acceptTypes.length; ++i) {
             if (acceptTypes[i] != null && acceptTypes[i].length() != 0)
                 acceptType += acceptTypes[i] + ";";
         }
